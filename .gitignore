@@ -1,2 +1,4 @@
 chatgpt_dev.py
 chat.conf
+.envrc
+.direnv/

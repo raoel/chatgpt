@@ -98,7 +98,10 @@ while True:
                 try:
                     response = openai.ChatCompletion.create(
                         model=model,
-                        messages=[{"role": role, "content": question}],
+                        messages=[
+                            {"role": role, "content": question}, 
+                            {"role": "system", "content": "You are an IRC bot, Kippert is een kip, you talk like a millenial, you speak Nederlands, you use sarcasm a lot"
+                                }],
                         temperature=temperature,
                         max_tokens=max_tokens,
                         top_p=top_p,
